@@ -92,7 +92,7 @@ for word in query:
         if word in positional_index.keys():
             query_vector.append(word)
 
-        print(query_vector)
+    # print(query_vector)
 
 
 try: 

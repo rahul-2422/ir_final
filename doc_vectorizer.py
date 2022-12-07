@@ -9,8 +9,8 @@ stopwords = set(stopwords.words('english'))
 pattern = re.compile(r'''(?x)([A-Z]\.)+|[\$|Rs]?\d+(\.\d+)?%?|\w+''', re.VERBOSE|re.I)
 
 documents_count = (len([name 
-for name in os.listdir('.\dataset') 
-    if os.path.isfile(os.path.join('.\dataset', name))]))
+for name in os.listdir('./dataset') 
+    if os.path.isfile(os.path.join('./dataset', name))]))
 
 os.chdir("jsonFiles")
 

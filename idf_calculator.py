@@ -3,8 +3,8 @@ import os
 import math
 
 documents_count = (len([name 
-for name in os.listdir('.\dataset') 
-    if os.path.isfile(os.path.join('.\dataset', name))]))
+for name in os.listdir('./dataset') 
+    if os.path.isfile(os.path.join('./dataset', name))]))
 
 os.chdir("jsonFiles")
 
