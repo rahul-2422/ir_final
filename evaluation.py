@@ -2,6 +2,9 @@ import os
 import json
 import numpy
 from math import log10, floor
+from matplotlib import pyplot as plt
+
+
 
 def round_to_1(x):
     return round(x, -int(floor(numpy.log10(x, where = x >0))))
