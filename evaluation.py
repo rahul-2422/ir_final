@@ -55,6 +55,8 @@ relevant = 0
 retrieved = 0
 
 # print(list(evaluation.values()))
+PR = []
+R =[]
 
 for i in list(evaluation.values()):
     retrieved += 1
@@ -62,6 +64,8 @@ for i in list(evaluation.values()):
         opinion = "R "
         relevant += 1
     else: 
+        PR.append(round_to_1(relevant / retrieved))
+        R.append(round_to_1(relevant / total_relevant))
         opinion = "NR"
     print(opinion, "Precision : ", round_to_1(relevant / retrieved), "\t\tRecall : ", round_to_1(relevant / total_relevant))
 
