@@ -67,4 +67,9 @@ print("Total no of relevant docs: ", total_relevant)
 print("Total no of documents retrieved : ", retrieved)
 
 
+print("P-R Curve")
+plt.plot(R,PR)
+plt.xlabel('Recall')
+plt.ylabel('Precision')
+plt.show()
 
